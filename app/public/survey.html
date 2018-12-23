@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Finder Survey</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--jquery-->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <!--Bootstrap-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Survey Questions</h2>
+
+        
+            <div class="form-group">
+                <form>
+                    <H3>About You</H3>
+                    <label>Name (Required)</label>
+                    <input class="form-control" id="name">
+                    <label>Link to Photo Image (Required)</label>
+                    <input class="form-control" id = "image">
+                </form>
+            </div>
+            <div class="form-group">
+                <h3>Question 1</h3>
+                <h4>On a Saturday night you would rather spend the night out on the town than stay in and watch a movie.</h4>
+                <select id="q1">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 </option>
+                    <option value="3">3 </option>
+                    <option value="4">4 </option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <h3>Question 2</h3>
+                <h4>You enjoy being spontaneious, and you rarely make plans.</h4>
+                <select id="q2">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 </option>
+                    <option value="3">3 </option>
+                    <option value="4">4 </option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h3>Question 3</h3>
+                <h4>You are outgoing and love to meet new people.</h4>
+                <select id="q3">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 </option>
+                    <option value="3">3 </option>
+                    <option value="4">4 </option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h3>Question 4</h3>
+                <h4>You enjoy spending time outdoors doing actvities like camping and hiking,</h4>
+                <select id="q4">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 </option>
+                    <option value="3">3 </option>
+                    <option value="4">4 </option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h3>Question 5</h3>
+                <h4>You like to save as much of your income possible and rarely do things like going to concerts and eating at restaruants.</h4>
+                <select id="q5">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 </option>
+                    <option value="3">3 </option>
+                    <option value="4">4 </option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <h3>Question 6</h3>
+                <h4>You like to save as much as possible and rarely do things like going to concerts and eating at restaruants.</h4>
+                <select id="q6">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 </option>
+                    <option value="3">3 </option>
+                    <option value="4">4 </option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <h3>Question 7</h3>
+                <h4>You consider yourself more politically conservative than liberal.</h4>
+                <select id="q7">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 </option>
+                    <option value="3">3 </option>
+                    <option value="4">4 </option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <h3>Question 8</h3>
+                <h4>You love animals and would like to have a pet.</h4>
+                <select id="q8">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 </option>
+                    <option value="3">3 </option>
+                    <option value="4">4 </option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h3>Question 9</h3>
+                <h4>You would rather go to an art gallery than a football game.</h4>
+                <select id="q9">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 </option>
+                    <option value="3">3 </option>
+                    <option value="4">4 </option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <h3>Question 10</h3>
+                <h4>Your religion is a significant part of your life.</h4>
+                <select id="q10">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 </option>
+                    <option value="3">3 </option>
+                    <option value="4">4 </option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        <button type="button" class="btn btn-primary" id = "submitSurvey">Submit Answers</button>
+
+
+</div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Nest Match</h4>
+                        </div>
+                        <div class="modal-body">
+                            <h3 id="match-name">Some text in the modal.</h3>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<script type = "text/javascript">
+    $("#submitSurvey").on("click", function(event) {
+        event.preventDefault();
+        // Create an object for the user's data
+        var newFriend = {
+            name: $("#name").val();
+            photo: $("#image").val();
+            scores: [
+                $("#q1").val(),
+                $("#q2").val(),
+                $("#q3").val(),
+                $("#q4").val(),
+                $("#q5").val(),
+                $("#q6").val(),
+                $("#q7").val(),
+                $("#q8").val(),
+                $("#q9").val(),
+                $("#q10").val(),
+            ]
+        };
+
+        //post the data to the friends API
+        $.post("/api/friends", newFriend, function(data) {
+            $("#match-name").text(data.name);
+            $("#match-img").attr(src, data.photo);
+
+            $("#results-modal").modal("toggle");
+        })
+    })
+
+
+</script>
+
+</body>
+
+</html>

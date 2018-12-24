@@ -13,7 +13,24 @@ var friends = [{
         4,
         1
       ]
-  }];  
+    },
+    {
+        "name":"Amy",
+        "photo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyThpRRIHLSejBN9ilmvRFi4U2uKQfhoCO2w3iXAIOuaiULahRgg",
+        "scores":[
+            3,
+            3,
+            5,
+            2,
+            4,
+            1,
+            4,
+            3,
+            3,
+            5
+        ]
+    }
+];  
 
     // Note how we export the array. This makes it accessible to other files using require.
     module.exports = friends;

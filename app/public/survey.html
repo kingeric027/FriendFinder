@@ -203,7 +203,19 @@
 
            $("#myModal").modal("toggle");
         })
-    })
+        
+        //Reset name and image
+        $("#name").val('');
+        $("#image").val('');
+
+        //Reset all options back to default (1)
+        for(i=1; i<=10; i++){ 
+            question = "#q"+i+" option";
+            $(question).prop('selected', function() {
+                return this.defaultSelected;
+            });
+        }
+    });
 
 
 </script>

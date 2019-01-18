@@ -6,6 +6,8 @@ var app = express();
 var PORT = process.env.PORT || 8080;
 var path = require("path");
 
+app.use(express.static("./app/public"));
+
 // ================================================================================
 // ROUTER
 // The below points our server to a series of "route" files.
